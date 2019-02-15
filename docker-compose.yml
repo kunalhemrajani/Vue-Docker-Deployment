@@ -1,0 +1,12 @@
+version: '3'
+services:
+  client:
+    build:
+      dockerfile: Dockerfile
+      context: ./ #specify path to the Dockerfile
+    # volumes:
+    #   - /app/node_modules 
+    #   - ./:app #map cwd to the app dir
+    ports:
+      - '80:8080'
+
